@@ -1,0 +1,82 @@
+def duim_sant_1 (duim):
+    return duim * 0.39
+def sant_duim_2 (sant):
+    return sant / 0.39
+def mil_kilmm_3 (mil):
+    return mil*0.621
+def kilmm_mil_4 (kill):
+    return kill / 0.621
+def funt_killgr_5 (funt):
+    return funt * 2.205
+def killgr_funt_6 (killgr):
+    return killgr / 0.205
+def unc_gramm_7 (unc):
+    return unc*0.0353
+def gramm_unc_8 (gramm):
+    return gramm / 0.0353
+def gall_litr_9 (gal):
+    return gal * 3.785
+def litr_gal_10 (litr):
+    return litr /3.785
+def pint_litr_11 (pint):
+    return pint * 0.473
+def litr_pint_12 (litr):
+    return litr / 0.473
+print("Привет, я помогу тебе перевести твое число"
+      " в необходимую тебе величиниу")
+you_namber=int(input('Напиши значение твоей величины:'))
+print('А теперь выбери какой перевод тебе необходим:\n'
+'1. Дюймы в сантиметры\n'
+'2. Сантиметры в дюймы'
+'3. Мили в километры\n'
+'4. Километры в мили\n'
+'5. Фунты в килограммы\n'
+'6. Килограммы в фунты\n'
+'7. Унции в граммы\n'
+'8. Граммы в унции\n'
+'9. Галлоны  в литры\n'
+'10. Литры в галлоны\n'
+'11. Пинтыв литры\n'
+'12. Литры в пинты\n'
+'0. Выход из подсчетов\n')
+you_nomer_translate = int(input('Напиши номер необходимого перевода:'))
+
+while you_nomer_translate != 0 and you_nomer_translate >0 and you_nomer_translate < 13:
+    if you_nomer_translate == 0:
+        continue
+    elif you_nomer_translate == 1:
+        print(duim_sant_1 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 2:
+        print(sant_duim_2 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 3:
+        print(mil_kilmm_3 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 4:
+        print(kilmm_mil_4 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 5:
+        print(funt_killgr_5(you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 6:
+        print(killgr_funt_6 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 7:
+        print(unc_gramm_7 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 8:
+        print(gramm_unc_8 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 9:
+        print(gall_litr_9 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 10:
+        print(litr_gal_10 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 11:
+        print(pint_litr_11 (you_namber))
+        you_nomer_translate = you_nomer_translate - 13
+    elif you_nomer_translate == 12:
+        print(litr_pint_12(you_namber))
+        you_nomer_translate = you_nomer_translate - 13
