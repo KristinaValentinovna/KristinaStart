@@ -1,0 +1,24 @@
+
+class Iterator:
+    def __iter__(self):
+        return self
+
+    def __init__(self, spisok):
+        self.spisok = list(spisok)
+
+
+    def __next__(self):
+        if self.spisok in self.spisok[2::2]:
+            return self.spisok**2
+        return self.spisok
+        self.spisok +1
+        return self.spisok
+
+a=[1,2,3,4,5,6]
+spisok = Iterator(a)
+for i in spisok:
+    print(i)
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8]
+# b = a[2::2]
+# print(b)
